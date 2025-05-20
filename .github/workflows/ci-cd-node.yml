@@ -1,0 +1,17 @@
+name: Node build & Deploy via SFTP 🚀
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ci-and-deploy-to-sftp:
+    uses: miguelms95/ci-workflow--node/.github/workflows/ci-node-deploy.yml@main
+    with:
+      node_version: '20'
+      target_path: "svg-to-png-converter"
+      deploy_sftp: true
+    secrets:
+      sftp_host: ${{ secrets.SFTP_HOST }}
+      sftp_user: ${{ secrets.SFTP_USER }}
+      sftp_pass: ${{ secrets.SFTP_PASS }}
