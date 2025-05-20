@@ -10,3 +10,12 @@ This simple tool allows you to convert SVG (Scalable Vector Graphics) files to P
 
 4. **Reset:** Use the "Reset" button to clear the current SVG file and start over with a new one.
 
+
+## Available Commands
+
+| Command | Description                                      |
+| ------- | ------------------------------------------------ |
+| `make help` | Displays all available make targets/commands.      |
+| `make install` | Installs project dependencies.                    |
+| `make run` | Starts the development server.                   |
+| `make build` | Builds the project for production, outputting to the `dist` folder. |
